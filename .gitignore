@@ -39,3 +39,13 @@
 
 # debug information files
 *.dwo
+
+# User settings
+*.vcxproj.user
+
+# Visual Studio build folder
+MoreSAPIVoices/
+.vs/
+
+# Visual Studio Executable (use Releases, instead)
+x64/
