@@ -55,7 +55,7 @@ Here are the registry keys for the OneCore Ichiro voice copied to the SAPI tree 
 
 Notice that the Ichiro voice is also a OneCore voice, but it is not by default installed in the SAPI registry tree.
 
-``MoreSAPIVoices`` does not look at the Voice path to decide which voices to uninstall for that very reason: some standard SAPI voices are implemented with OneCore. That is why the presence of the added ``MoreSAPIVoices`` key is used to decide which registry entries to remove during uninstall.
+``MoreSAPIVoices`` does not look at the ``VoicePath`` value to decide which voices to uninstall for that very reason: some standard SAPI voices are implemented with OneCore. That is why the presence of the added ``MoreSAPIVoices`` key is used to decide which registry entries to remove during uninstall.
 
 ### Why Are There Now Two Voices with the same name?
 
