@@ -47,9 +47,15 @@ For example, here are the default SAPI "David" voice's registry keys:
 
 ![David Registry Keys](ReadMeImages/DavidRegistry.png)
 
-Here are the registry keys for the OneCore Ichiro voice copied to the SAPI hive by ``MoreSAPIVoices``. Notice the ``MoreSAPIVoices`` key that was added to identify a SAPI voice that ``MoreSAPIVoices uninstall`` will remove.
+Notice that while the voice is installed in the ``Speech\Voices\`` tree used for SAPI voices, that the speech "engine" is actually in the OneCore directory.
+
+Here are the registry keys for the OneCore Ichiro voice copied to the SAPI tree by ``MoreSAPIVoices``. Notice the ``MoreSAPIVoices`` key that was added to identify a SAPI voice that ``MoreSAPIVoices uninstall`` will remove.
 
 ![Ichiro Registry Keys](ReadMeImages/IchiroRegistry.png)
+
+Notice that the Ichiro voice is also a OneCore voice, but it is not by default installed in the SAPI registry tree.
+
+``MoreSAPIVoices`` does not look at the Voice path to decide which voices to uninstall for that very reason: some standard SAPI voices are implemented with OneCore. That is why the presence of the added ``MoreSAPIVoices`` key is used to decide which registry entries to remove during uninstall.
 
 ### Why Are There Now Two Voices with the same name?
 
